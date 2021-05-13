@@ -1,0 +1,102 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- make the website responsive-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans:wght@700&family=Poppins&display=swap" rel="stylesheet">
+	<link rel= "stylesheet" type="text/css" href="style.css">  <!--  connect with .css file-->
+    <link rel= "stylesheet"  href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Finance Management</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="homepage.html"><img src="images/logo.png" ></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+         <ul>
+            <li><a href="homepage.html"> Home </a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="http://localhost/PPM_website_1/manage2.php"> Manage </a></li>
+            <li><a href="http://localhost/PPM_website_1/graph.php"> Graph </a></li>
+            <li><a href="aboutus.html"> About us </a></li>
+            <li><a href="contact.html"> Contact us </a></li>
+         </ul>
+        </div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	    </nav>
+	<h1>Manage your finance</h1>
+    </section>
+      <!-- *************************************navbar ends**************************************** -->
+      <!-- ! section 1 starts -->
+      <section id="sec-two">
+         <div class="container">
+            <h1>Registration Form!</h1>
+            <form class="x" name="myForm" action="#" onsubmit="return validateForm()" method="post">
+               <label>First Name</label>
+               <input type="text" id="fname" name="firstname" placeholder="First name .." >
+               <label>Last Name</label>
+               <input type="text" id="lname" name="lastname" placeholder="Last name .." >
+
+			   
+               <label id="gender">Gender :</label>
+               <input style="position:absolute;" class="" id="male" name="gender" type="radio" value="Male">
+               <label style="position: absolute;right: 55%">Male</label>
+               <input style="position:absolute; right: 95px;" class="" id="female" name="gender" type="radio" value="Female">
+               <label>Female</label><br>
+			   
+			   <tr>
+               <label>Contact No. :</label>
+               <input id="contact" name="contact" placeholder="Contact No." type="number">
+               <label>Email</label>
+               <input id="email" type="email" name="email" placeholder="Email .." >
+               <label>Pasword</label>
+               <input id="password" type="text" name="password" placeholder="Password .." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" title="Must contains at least one number and one uppercase and lowercase letter, and at least 7 or more characters" >
+               <label>Confirm Pasword</label>
+               <input type="text" id="confirm" name="confirmpassword" placeholder="Confirm Password .."  >
+               </tr>
+               <br />
+               <tr>
+               <br />
+			     <input type="submit" name="submit" value="Register" class="register_btn"  >
+               </tr>
+            </form>
+         </div>
+
+		 
+      </section>
+      <!-- !section 1 ends -->
+      <!-- ************************************FOOTER STARTS************************************* -->
+	<section class="manage_content" ></section>
+        <section class="footer">
+            <h4>About us</h4>
+            <p>Our finance manage webiste helps people their finance well. <br>
+            This website can help to manage their finance by type income and spending, <br>
+            also our website is showing the stats of your finance graphs.</p>
+        
+            <h4>Socialize with us!</h4>
+            <section class="socials">
+              <ul class="socials">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i> </a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+              </ul>
+            </section>
+        </section>
+	
+<!-- JavaScript for Toggle Menu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

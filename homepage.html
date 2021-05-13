@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- make the website responsive-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans:wght@700&family=Poppins&display=swap" rel="stylesheet">
+	<link rel= "stylesheet" type="text/css" href="style.css">  <!--  connect with .css file-->
+    <link rel= "stylesheet"  href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Finance Management</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="homepage.html"><img src="images/logo.png" ></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="homepage.html"> Home </a></li>
+					<li><a href="register.html">Register</a></li>
+                    <li><a href="http://localhost/PPM_website_1/manage2.php"> Manage </a></li>
+                    <li><a href="http://localhost/PPM_website_1/graph.php"> Graph </a></li>
+                    <li><a href="aboutus.html"> About us </a></li>
+                    <li><a href="contact.html"> Contact us </a></li>
+					
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Welcome to our Finance Management Website</h1>
+    <p>We will manage your finance well</p>
+    <a href="register.html" class="start_button"> Let start with us more </a>
+</div>
+    </section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About us</h4>
+    <p>Our finance manage webiste helps people their finance well. <br>
+    This website can help to manage their finance by type income and spending, <br>
+    also our website is showing the stats of your finance graphs.</p>
+
+    <h4>Socialize with us!</h4>
+    <section class="socials">
+      <ul class="socials">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i> </a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+      </ul>
+    </section>
+</section>
+<!-- JavaScript for Toggle Menu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
